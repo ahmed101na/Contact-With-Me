@@ -1,0 +1,124 @@
+/*=============================
+- Page content
+===============================
+1.All items
+2.Format the background div element
+3.Format the container element
+4.Format the title div with the elements inside it
+5.Formatting the header element and the elements inside it
+6.Formatting the div icon and the elements inside it
+7.Media response part
+==============================*/
+
+/*==========!Formats!========*/
+
+/*=============================
+1.All items
+==============================*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
+}
+/*=============================
+2.Format the background div element
+==============================*/
+.background {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/imges/Background-3.jpg);
+}
+/*=============================
+3.Format the container element
+==============================*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: center;
+}
+/*=============================
+4.Format the title div with the elements inside it
+==============================*/
+.title h1 {
+  font-size: 45px;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.title p {
+  padding: 9px;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.title p span {
+  border-bottom: 1.5px solid #48ff00;
+  padding-bottom: 4px;
+}
+.title p span:hover {
+  color: #48ff00;
+  cursor: help;
+}
+/*=============================
+5.Formatting the header element and the elements inside it
+==============================*/
+header ul {
+  display: flex;
+}
+header ul li {
+  padding: 14px;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  padding-bottom: 4px;
+}
+ul li a:hover {
+  color: #449424;
+  border-bottom: 1.7px solid #48ff00;
+}
+li a span {
+  padding-bottom: 4px;
+  letter-spacing: 3px;
+  border-bottom: 1.7px solid #48ff00;
+}
+/*=============================
+6.Formatting the div icon and the elements inside it
+==============================*/
+.icon {
+  margin: 20px;
+  padding: 20px;
+}
+.icon a {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  font-size: 25px;
+  background: rgba(148, 148, 148, 0.342);
+  border-radius: 60%;
+}
+/*=============================
+7.Media response part
+==============================*/
+@media (max-width: 590px) {
+  header ul {
+    flex-direction: column;
+  }
+  .icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icon a {
+    width: auto;
+  }
+}
